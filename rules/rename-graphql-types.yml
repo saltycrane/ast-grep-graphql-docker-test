@@ -1,0 +1,13 @@
+id: rename-graphql-types
+language: graphql
+rule:
+  regex: Type$
+  kind: named_type
+  pattern: $OLD_TYPE
+transform:
+  NEW_TYPE:
+    replace:
+      source: $OLD_TYPE
+      replace: (?<REG>.*)Type$
+      by: $REG
+fix: $NEW_TYPE

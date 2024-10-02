@@ -1,0 +1,5 @@
+id: find-graphql-types
+language: graphql
+rule:
+  regex: Type$
+  kind: named_type

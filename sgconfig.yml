@@ -1,0 +1,12 @@
+ruleDirs:
+- ./rules
+customLanguages:
+  graphql:
+    libraryPath: graphql.so
+    extensions: [graphql]
+    expandoChar: $
+languageInjections:
+- hostLanguage: tsx
+  rule:
+    pattern: graphql`$CONTENT`
+  injected: graphql
